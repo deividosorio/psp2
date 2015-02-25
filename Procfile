@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* edu.uniandes.ecos.psp11.controlador.App
+web:    java -cp target/classes:target/dependency/* edu.uniandes.ecos.psp2.controlador.App
