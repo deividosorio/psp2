@@ -24,7 +24,7 @@ public class MainView {
         PrintWriter pw = resp.getWriter();
         pw.write("<html>");
         pw.println("<h1>PSP2 Programa de integración numéricamente de una función utilizando"
-                + "la regla de Simpson</h1>");
+                + " la regla de Simpson</h1>");
         pw.println("<p>ECOS 2015 <br>Deivid Alexander Osorio Barrera</p>");
         pw.println("<p>Taller N.5</p>");
         
@@ -48,9 +48,9 @@ public class MainView {
         resp.getWriter().println("<b>Valor P:</b>   " + formatter.format(valorP) + "<br>");
         resp.getWriter().println("<hr>");
         resp.getWriter().println("<h2>Test Realizados</h2>");
-        resp.getWriter().println("<b>Test1: <br></b>Valor X= 0 to 1.1 <br> Valor dof = 9 <br>"
-                + "<b>Test2: <br></b>Valor X= 0 to 1.1812 <br> Valor dof = 10 <br>"
-                + "<b>Test3: <br></b>Valor X= 0 to 2.750 <br> Valor dof = 30 <br>");
+        resp.getWriter().println("<b>Test1: <br></b>Valor X= 0 to 1.1 <br> Valor dof = 9 <br><br>"
+                + "<b>Test2: <br></b>Valor X= 0 to 1.1812 <br> Valor dof = 10 <br><br>"
+                + "<b>Test3: <br></b>Valor X= 0 to 2.750 <br> Valor dof = 30 <br><br>");
         
     }    
 }
