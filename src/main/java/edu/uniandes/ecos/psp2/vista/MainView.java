@@ -24,7 +24,7 @@ public class MainView {
         PrintWriter pw = resp.getWriter();
         pw.write("<html>");
         pw.println("<h1>PSP2 Programa de integración numéricamente de una función utilizando"
-                + "la regla de Simpson/h1>");
+                + "la regla de Simpson</h1>");
         pw.println("<p>ECOS 2015 <br>Deivid Alexander Osorio Barrera</p>");
         pw.println("<p>Taller N.5</p>");
         
