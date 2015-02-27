@@ -20,13 +20,13 @@ public class MainConsole {
         Calculator test2 = new Calculator(1.1812, 10);
         Calculator test3 = new Calculator(2.750, 30);
         
-        System.out.println("Valor P con test1, x: o to 1.1 y dof: 9" +
+        System.out.println("Valor P con test1, x: 0 to 1.1 y dof: 9  " +
                 test1.getP());
                 
-        System.out.println("Valor P con test2, x: o to 1.1812 y dof: 10" +
+        System.out.println("Valor P con test2, x: 0 to 1.1812 y dof: 10  " +
                 test2.getP());
         
-        System.out.println("Valor P con test3, x: o to 2.750 y dof: 30" +
+        System.out.println("Valor P con test3, x: 0 to 2.750 y dof: 30  " +
                 test3.getP());
     }
 }

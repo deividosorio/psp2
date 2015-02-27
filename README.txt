@@ -10,6 +10,6 @@ Para obtener este proyecto desde el repositorio GutHub, clone el proyecto con la
 https://github.com/deividosorio/psp2.git
 
 URL HEROKU:
-https://psp2ecosdaob.herokuapp.com//
+https://psp2ecosdaob.herokuapp.com
 
 Deivid Alexander Osorio Barrera

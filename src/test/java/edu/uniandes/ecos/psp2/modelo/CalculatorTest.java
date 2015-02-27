@@ -35,7 +35,7 @@ public class CalculatorTest extends TestCase {
         Calculator test1 = new Calculator(1.1 , 9);
         double expResult1 = 0.35006;
         double result1 = test1.getP();
-        assertEquals(expResult1, result1, 0.1);
+        assertEquals(expResult1, result1, 0.001);
         
         
         Calculator test2 = new Calculator(1.1812 , 10);
@@ -47,7 +47,6 @@ public class CalculatorTest extends TestCase {
         Calculator test3 = new Calculator(2.750 , 30);
         double expResult3 = 0.49500;
         double result3 = test3.getP();
-        assertEquals(expResult3, result3, 0.1);
+        assertEquals(expResult3, result3, 0.01);
     }
-    
 }

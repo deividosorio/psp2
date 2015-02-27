@@ -32,7 +32,7 @@ public class MainView {
         pw.write("<form action=\"calc\" method=\"post\"> \n"
                 + "    X: 0 to <input type=\"text\" size=\"10\" name=\"valX\"><br>\n"
                 + "    dof: <input type=\"text\" size=\"10\" name=\"valdof\"><br>\n"
-                + "    <input type=\"submit\" value=\"Calcular Integral\"> </form> "
+                + "    <br><input type=\"submit\" value=\"Calcular Integral\"> </form> "
                 + "<p>Se toma como valor constante num_seg = 10</p>"
                 + "<p>Se toma como valor constante E = 0.00001</p>");
         pw.write("</html>");

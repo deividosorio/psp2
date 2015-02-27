@@ -34,7 +34,6 @@ public class App extends HttpServlet {
         } catch (Exception ex) {
             Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
 
     @Override
@@ -69,9 +68,7 @@ public class App extends HttpServlet {
         double valdof = Double.parseDouble(req.getParameter("valdof"));
 
         Calculator calc = new Calculator(valX, valdof);
-        double valP = calc.getP();
-        
+        double valP = calc.getP();   
         MainView.showResults(req, resp, valP);
     }
-
 }

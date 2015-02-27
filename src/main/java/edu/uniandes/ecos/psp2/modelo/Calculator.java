@@ -6,8 +6,8 @@
 package edu.uniandes.ecos.psp2.modelo;
 
 /**
- * Description: Clase encargada de representar los cálculos para obtener
- * el valor de P
+ * Description: Clase encargada de representar los cálculos para obtener el
+ * valor de P
  *
  * @author deividosorio
  * @version 15/02/2015
@@ -45,23 +45,26 @@ public class Calculator {
      * @return this.p tipo double
      */
     public double getP() {
-        double p;
-        double sumImpar = 0;
-        double sumPar = 0;
+        double p = 0;
         //recorre los valores de i = 0 hasta i = num_seg, identifica
         //si un valor es par o impar para hacer la operación * 2 o * 4
-        for (int i = 0; i < this.NUM_SEG; i++) {
-            if (i / 2 == 0) {
-                sumPar += 4 * getFX(this.valW * i);
+        //si es x == 0 o igual a Num_SEG se debe hacer la operación * 1
+        for (int i = 0; i <= this.NUM_SEG; i++) {
+            if (i == 0) {
+                p += (this.valW / 3 * getFX(0));
+            } else if (i == this.NUM_SEG) {
+                p += (this.valW / 3) * getFX(this.valW * i);
             } else {
-                sumImpar += 2 * getFX(this.valW * i);
+                if (i % 2 == 0) {
+                    p += (this.valW / 3) * (2 * getFX(this.valW * i));
+                } else {
+                    p += (this.valW / 3) * (4 * getFX(this.valW * i));
+                }
             }
         }
-        p = (this.valW / 3) * (getFX(0) + sumPar + sumImpar + getFX(this.valX));
         return p;
     }
 
-    
     // -----------------------------------------------------------------
     // Métodos privados
     // -----------------------------------------------------------------
@@ -91,10 +94,10 @@ public class Calculator {
      * @return factorial(x) tipo double
      */
     private double getFactorial(double numero) {
-            return getGamma(numero - 1);
-        }
+        return getGamma(numero - 1);
+    }
 
-        /**
+    /**
      * Método retorna el càlculo de Gamma
      *
      * @return gamma(x) tipo double
@@ -109,5 +112,4 @@ public class Calculator {
         }
     }
 
-    
 }
